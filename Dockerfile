@@ -20,6 +20,7 @@ WORKDIR /opt/
 #Download repo and install cbapi
 RUN git clone https://github.com/carbonblack/cbapi-python.git
 RUN git clone https://github.com/MHaggis/cb-response-surveyor.git
+RUN git clone https://github.com/carbonblack/community.git
 RUN pip install cbapi
 
 #Create credential store
