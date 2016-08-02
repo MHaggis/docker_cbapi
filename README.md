@@ -7,10 +7,30 @@ You will need Docker in order to properly utilize this simple build environment,
 **Setup**
 
 Simply fill in the credentials.response (for Carbon Black Response) with the proper information related to your CbR environment. 
-Once complete, execute:
+
+Execute the following to build the container:
 
 `docker build -t carbonblack/cbapi .`
 
-Once finished, attach to the new image:
+Confirm completion:
+
+`docker images`
+
+Attach to the new image:
 
 `docker run -t -i carbonblack/cbapi /bin/bash`
+
+**Environment**
+
+Working directory: `/opt/`
+
+All repositories drop into `/opt/`
+
+To add new repositories to the environment before building, modify Dockerfile by adding:
+
+`RUN git clone <new repo URL>`
+
+To add new repositories after build, attach to container and run:
+
+`git clone <repo URL>`
+
