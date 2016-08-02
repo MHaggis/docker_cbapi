@@ -17,7 +17,7 @@ RUN apt-get install -y \
 WORKDIR /opt/
 
 
-#Download repo and install cbapi
+#Download repos and install cbapi
 RUN git clone https://github.com/carbonblack/cbapi-python.git
 RUN git clone https://github.com/MHaggis/cb-response-surveyor.git
 RUN git clone https://github.com/carbonblack/community.git
