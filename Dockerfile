@@ -21,7 +21,11 @@ WORKDIR /opt/
 RUN git clone https://github.com/carbonblack/cbapi-python.git
 RUN git clone https://github.com/MHaggis/cb-response-surveyor.git
 RUN git clone https://github.com/carbonblack/community.git
+RUN git clone https://github.com/carbonblack/cb-reporting.git
 RUN pip install cbapi
+RUN cd cb-reporting
+RUN pip install -r requirements.txt
+RUN cd /opt
 
 #Create credential store
 RUN mkdir /etc/carbonblack
