@@ -34,3 +34,4 @@ To add new repositories after build, attach to container and run:
 
 `git clone <repo URL>`
 
+More on the CBAPI here:[Carbon Black Python-CBAPI](https://github.com/carbonblack/cbapi-python)
