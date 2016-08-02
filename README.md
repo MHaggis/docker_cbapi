@@ -1,6 +1,7 @@
 # Docker Development Environment for Carbon Black API
 
 **Information**
+
 You will need Docker in order to properly utilize this simple build environment, please download here: `http://www.docker.com/products/docker#/mac`
 
 **Setup**
